@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PLP ELMS - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,700;0,800;1,600;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="home.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <header class="navbar">
+    <div class="navbar-container">
+      <a href="/home.html" class="navbar-brand">
+        <img class="navbar-logo" src="https://api.builder.io/api/v1/image/assets/TEMP/dd3db7f4df3a24814cb1e712ad58474ebac6e0f9?width=332" alt="PLP Logo" />
+        <span class="navbar-brand-text">PLP - ELMS</span>
+      </a>
+
+      <nav class="navbar-nav" aria-label="Main navigation">
+        <a href="/home.html" class="nav-link nav-link--active">Home</a>
+        <a href="/program.html" class="nav-link">Program</a>
+        <a href="/subject.html" class="nav-link">Subject</a>
+        <a href="/research.html" class="nav-link">Research</a>
+        <a href="/about.html" class="nav-link">About</a>
+      </nav>
+
+      <div class="navbar-actions">
+        <a href="/login-student.html" class="btn btn--outline">Log In</a>
+        <a href="/signup-student.html" class="btn btn--dark">Sign Up</a>
+        <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <nav class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="/home.html" class="mobile-nav-link mobile-nav-link--active">Home</a>
+      <a href="/program.html" class="mobile-nav-link">Program</a>
+      <a href="/subject.html" class="mobile-nav-link">Subject</a>
+      <a href="/research.html" class="mobile-nav-link">Research</a>
+      <a href="/about.html" class="mobile-nav-link">About</a>
+      <div class="mobile-nav-actions">
+        <a href="/login-student.html" class="btn btn--outline">Log In</a>
+        <a href="/signup-student.html" class="btn btn--dark">Sign Up</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ── Hero Section ── -->
+    <section class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="8" cy="8" r="7" stroke="#2CA24F" stroke-width="1.5"/><path d="M8 4v4l2.5 2.5" stroke="#2CA24F" stroke-width="1.5" stroke-linecap="round"/></svg>
+            Modern Learning Management
+          </div>
+
+          <h1 class="hero-title">
+            <span class="hero-title-green">PLP </span><span class="hero-title-yellow">ELECTRONIC LEARNING<br>MANAGEMENT </span><span class="hero-title-green">SYSTEM</span>
+          </h1>
+
+          <p class="hero-description">
+            A streamlined learning platform for professors and students. Create classes, share assignments, and track progress—all in one place.
+          </p>
+
+          <div class="hero-cta-row">
+            <a href="/signup-student.html" class="btn btn--primary-dark">Get Started Free →</a>
+            <a href="#how-it-works" class="btn btn--ghost">Watch Demo</a>
+          </div>
+
+          <div class="hero-stats-row">
+            <div class="hero-stat">
+              <span class="hero-stat-number">3k+</span>
+              <span class="hero-stat-label">Active Students</span>
+            </div>
+            <p class="hero-lms-desc">
+              This LMS is not just a digital classroom. It's a tailored learning system that meets PLP students where they are. It gives them autonomy, structure, and feedback all in one place. With this, PLP students can build confidence, stay engaged, and truly own their learning journey.
+            </p>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <!-- Replace src with your anime character illustration from Figma -->
+          <img
+            class="hero-anime-image"
+            src="https://api.builder.io/api/v1/image/assets/TEMP/46a7984cf461d3cedcb126c4132eaa0bca48171a?width=600"
+            alt="Student learning illustration"
+            onerror="this.style.display='none'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Features Section ── -->
+    <section class="features" id="features">
+      <div class="section-container">
+        <h2 class="section-title">Everything You Need</h2>
+        <p class="section-subtitle">Powerful features designed for modern education</p>
+
+        <div class="features-grid">
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#2CA24F" stroke-width="1.8"/><path d="M7 8h10M7 12h7" stroke="#2CA24F" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-title">Class Management</h3>
+            <p class="feature-desc">Create and organize classes with ease. Share materials, assignments, and announcements instantly.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="9" cy="7" r="3" stroke="#2CA24F" stroke-width="1.8"/><circle cx="15" cy="7" r="3" stroke="#2CA24F" stroke-width="1.8"/><path d="M3 19c0-3.314 2.686-5 6-5h6c3.314 0 6 1.686 6 5" stroke="#2CA24F" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-title">Student Collaboration</h3>
+            <p class="feature-desc">Foster collaboration among students with discussion boards and group assignments.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" stroke="#2CA24F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="feature-title">Grade Tracking</h3>
+            <p class="feature-desc">Track student progress and manage grades effortlessly with comprehensive analytics.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" stroke="#2CA24F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M13.73 21a2 2 0 0 1-3.46 0" stroke="#2CA24F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="feature-title">Real-time Notifications</h3>
+            <p class="feature-desc">Stay updated with instant notifications for new assignments, grades, and announcements.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="4" width="18" height="18" rx="2" stroke="#2CA24F" stroke-width="1.8"/><path d="M16 2v4M8 2v4M3 10h18" stroke="#2CA24F" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature-title">Smart Calendar</h3>
+            <p class="feature-desc">Never miss a deadline with an integrated calendar that syncs with all your classes.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-box">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="#2CA24F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="feature-title">Secure & Private</h3>
+            <p class="feature-desc">Your data is protected with state-university grade security and privacy controls.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── How It Works ── -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="section-container">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">Get started in three simple steps.</p>
+
+        <div class="steps-grid">
+
+          <div class="step-card">
+            <div class="step-number-wrapper">
+              <div class="step-number">1</div>
+              <span class="step-dot"></span>
+            </div>
+            <h3 class="step-title">Sign Up</h3>
+            <p class="step-desc">Create your account as a professor or students in seconds.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-wrapper">
+              <div class="step-number">2</div>
+              <span class="step-dot"></span>
+            </div>
+            <h3 class="step-title">Create or Join</h3>
+            <p class="step-desc">Professors create classes, students join with a code.</p>
+          </div>
+
+          <div class="step-card">
+            <div class="step-number-wrapper">
+              <div class="step-number">3</div>
+              <span class="step-dot"></span>
+            </div>
+            <h3 class="step-title">Start Learning</h3>
+            <p class="step-desc">Share assignments, collaborate, and track progress.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── CTA Section ── -->
+    <section class="cta-section">
+      <div class="section-container cta-inner">
+        <h2 class="cta-title">Ready to Transform Your Classroom?</h2>
+        <p class="cta-subtitle">Join thousands of professors and students using PLP-ELMS</p>
+        <a href="/signup-student.html" class="btn btn--white-pill">Get Started for Free →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand-col">
+        <div class="footer-brand">
+          <img class="footer-logo" src="https://api.builder.io/api/v1/image/assets/TEMP/dd3db7f4df3a24814cb1e712ad58474ebac6e0f9?width=332" alt="PLP Logo" />
+          <span class="footer-brand-name">PLP - ELMS</span>
+        </div>
+        <p class="footer-tagline">Modern learning management for the digital age</p>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Product</h4>
+        <a href="#features" class="footer-link">Features</a>
+        <a href="#" class="footer-link">Pricing</a>
+        <a href="#how-it-works" class="footer-link">Demo</a>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Links</h4>
+        <a href="/about.html" class="footer-link">About</a>
+        <a href="https://plpasig.edu.ph/" target="_blank" rel="noopener noreferrer" class="footer-link footer-link--highlight">PLP Main Website</a>
+        <a href="https://www.deped.gov.ph/" target="_blank" rel="noopener noreferrer" class="footer-link footer-link--highlight">DEPED</a>
+      </div>
+
+      <div class="footer-links-col">
+        <h4 class="footer-col-title">Support</h4>
+        <a href="#" class="footer-link">FAQ</a>
+        <a href="#" class="footer-link">Contact</a>
+        <a href="#" class="footer-link">Privacy</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Pamantasan ng Lungsod ng Pasig - Electronic Learning Management System. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileNav = document.getElementById('mobileNav');
+    menuBtn.addEventListener('click', () => {
+      const open = mobileNav.classList.toggle('mobile-nav--open');
+      menuBtn.setAttribute('aria-expanded', open);
+      mobileNav.setAttribute('aria-hidden', !open);
+    });
+  </script>
+</body>
+</html>
