@@ -7,44 +7,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="global.css">
   <link rel="stylesheet" href="dashboard-styles.css">
 </head>
 <body>
 
-  <!-- Sidebar -->
   <aside class="sidebar">
     <div class="sidebar-header">
       <img src="https://api.builder.io/api/v1/image/assets/TEMP/dd3db7f4df3a24814cb1e712ad58474ebac6e0f9" alt="PLP Logo" class="sidebar-logo">
       <span class="sidebar-brand">PLP ELMS</span>
     </div>
     <nav class="nav-menu">
-      <a href="#" class="nav-item">
-        <span>🏠</span> Home
-      </a>
-      <a href="#" class="nav-item active">
-        <span>📊</span> Dashboard
-      </a>
-      <a href="#" class="nav-item">
-        <span>📚</span> My Classes
-      </a>
-      <a href="#" class="nav-item">
-        <span>📝</span> Assignments
-      </a>
-      <a href="#" class="nav-item">
-        <span>📂</span> Materials
-      </a>
-      <a href="#" class="nav-item">
-        <span>⚙️</span> Settings
-      </a>
+      <a href="home.html" class="nav-item"><span>🏠</span> Home</a>
+      <a href="dashboard-student.html" class="nav-item active"><span>📊</span> Dashboard</a>
+      <a href="subject.html" class="nav-item"><span>📚</span> My Classes</a>
+      <a href="#" class="nav-item"><span>📝</span> Assignments</a>
+      <a href="#" class="nav-item"><span>📂</span> Materials</a>
     </nav>
     <div style="padding: 20px; border-top: 1px solid #f0f0f0;">
-      <a href="/login-student.html" class="nav-item" style="color: #e53935;">
-        <span>🚪</span> Logout
-      </a>
+      <a href="login-student.html" class="nav-item" style="color: #e53935;"><span>🚪</span> Logout</a>
     </div>
   </aside>
 
-  <!-- Main Content -->
   <div class="main-wrapper">
     <header class="top-header">
       <div class="search-bar">
@@ -74,9 +58,7 @@
           <h3 style="font-size: 20px; font-weight: 700;">Active Courses</h3>
           <a href="#" style="color: var(--green-primary); font-size: 14px; font-weight: 600; text-decoration: none;">View All</a>
         </div>
-        
         <div class="course-grid">
-          <!-- Course 1 -->
           <div class="course-card">
             <div class="course-thumb" style="background: #e8f5e9 url('https://api.builder.io/api/v1/image/assets/TEMP/b454eca5272b45bd5163bb9547a7f4d29c2b4581') center/cover;"></div>
             <div class="course-info">
@@ -88,54 +70,7 @@
               </div>
             </div>
           </div>
-
-          <!-- Course 2 -->
-          <div class="course-card">
-            <div class="course-thumb" style="background: #fff9c4;"></div>
-            <div class="course-info">
-              <span class="course-tag">MATHEMATICS</span>
-              <h4 class="course-title">Advanced Calculus II</h4>
-              <div class="course-meta">
-                <span>👤 Dr. Johnson</span>
-                <span>📈 40% Complete</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Course 3 -->
-          <div class="course-card">
-            <div class="course-thumb" style="background: #bbdefb;"></div>
-            <div class="course-info">
-              <span class="course-tag">HISTORY</span>
-              <h4 class="course-title">Philippine History & Culture</h4>
-              <div class="course-meta">
-                <span>👤 Prof. Garcia</span>
-                <span>📈 90% Complete</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section style="margin-top: 40px;">
-        <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 20px;">Upcoming Deadlines</h3>
-        <div style="background: white; border-radius: 16px; padding: 20px; box-shadow: var(--shadow);">
-          <div style="display: flex; align-items: center; padding: 15px 0; border-bottom: 1px solid #f0f0f0;">
-            <div style="width: 50px; height: 50px; background: #ffebee; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">📅</div>
-            <div style="flex: 1;">
-              <div style="font-weight: 600;">Final Project Proposal</div>
-              <div style="font-size: 13px; color: var(--text-muted);">Web Development • Due tomorrow, 11:59 PM</div>
-            </div>
-            <button style="padding: 8px 16px; background: var(--green-primary); color: white; border: none; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer;">Submit</button>
-          </div>
-          <div style="display: flex; align-items: center; padding: 15px 0;">
-            <div style="width: 50px; height: 50px; background: #fff3e0; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 15px;">📝</div>
-            <div style="flex: 1;">
-              <div style="font-weight: 600;">Calculus Problem Set #4</div>
-              <div style="font-size: 13px; color: var(--text-muted);">Advanced Calculus II • Due in 3 days</div>
-            </div>
-            <button style="padding: 8px 16px; background: #f0f2f1; color: var(--text-main); border: none; border-radius: 8px; font-size: 13px; font-weight: 600; cursor: pointer;">View</button>
-          </div>
+          <!-- More cards... -->
         </div>
       </section>
     </main>
