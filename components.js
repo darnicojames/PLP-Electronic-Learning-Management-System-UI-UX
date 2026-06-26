@@ -5,12 +5,12 @@
 const components = {
   navbar: `
     <nav class="navbar">
-      <a href="home.html" class="logo-container">
+      <a href="index.html" class="logo-container">
         <img src="https://api.builder.io/api/v1/image/assets/TEMP/dd3db7f4df3a24814cb1e712ad58474ebac6e0f9" alt="PLP Logo" class="logo-img">
         <span class="brand-name">PLP ELMS</span>
       </a>
       <ul class="nav-links">
-        <li><a href="home.html" data-page="home">Home</a></li>
+        <li><a href="index.html" data-page="home">Home</a></li>
         <li><a href="program.html" data-page="program">Program</a></li>
         <li><a href="subject.html" data-page="subject">Subject</a></li>
         <li><a href="research.html" data-page="research">Research</a></li>
@@ -18,7 +18,7 @@ const components = {
       </ul>
       <div class="auth-buttons">
         <a href="login-student.html" class="btn btn-outline">Login</a>
-        <a href="index.html" class="btn btn-primary">Sign Up</a>
+        <a href="signup-professor.html" class="btn btn-primary">Sign Up</a>
       </div>
     </nav>
   `,
@@ -35,7 +35,7 @@ const components = {
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
-            <li><a href="home.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="program.html">Academic Programs</a></li>
             <li><a href="research.html">Research Center</a></li>
             <li><a href="about.html">About Us</a></li>

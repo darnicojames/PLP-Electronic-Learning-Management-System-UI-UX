@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Student Sign Up - PLP ELMS</title>
+  <title>Professor Sign Up - PLP ELMS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -29,7 +29,7 @@
         </h1>
       </div>
 
-      <p class="signup-subtitle">Join the student community and start your digital learning journey</p>
+      <p class="signup-subtitle">Empower your students with the best learning tools</p>
 
       <div class="form-and-roles">
         <form class="register-form">
@@ -38,35 +38,35 @@
             <input class="field-input" type="text" placeholder="Last Name, First Name, M.I." required>
           </div>
           <div class="field-group">
-            <label class="field-label">Student Email</label>
-            <input class="field-input" type="email" placeholder="student@plpasig.edu.ph" required>
+            <label class="field-label">Email Address</label>
+            <input class="field-input" type="email" placeholder="name@plpasig.edu.ph" required>
           </div>
           <div class="field-group">
             <label class="field-label">Password</label>
             <input class="field-input" type="password" placeholder="Create a password" required>
           </div>
-          <button class="register-btn" type="submit" style="background: var(--green-primary);">Create Student Account</button>
+          <button class="register-btn" type="submit" style="background: var(--green-dark);">Register as Educator</button>
         </form>
 
         <div class="role-selector">
-          <div class="role-card role-card--active">
+          <a href="signup-student.html" class="role-card">
             <div class="role-icon-box">
               <img class="role-icon" src="https://api.builder.io/api/v1/image/assets/TEMP/3a18d9ec8937af5b60962a9a37079870fcd5694a?width=294" alt="Student">
             </div>
             <span class="role-label">STUDENT</span>
-          </div>
-          <a href="signup-professor.html" class="role-card">
+          </a>
+          <div class="role-card role-card--active">
             <div class="role-icon-box">
               <img class="role-icon" src="https://api.builder.io/api/v1/image/assets/TEMP/cc653d77a6b450e213254eae2a90738b95c0cd80?width=248" alt="Professor">
             </div>
             <span class="role-label">PROFESSOR</span>
-          </a>
+          </div>
         </div>
       </div>
 
       <div class="signin-prompt">
         <span>Already have an account?</span>
-        <a href="login-student.html" class="signin-link">Sign In Now</a>
+        <a href="login-professor.html" class="signin-link">Sign In Now</a>
       </div>
     </div>
   </main>

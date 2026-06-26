@@ -3,76 +3,108 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Professor Sign Up - PLP ELMS</title>
+  <title>Home - PLP ELMS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="global.css">
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    .hero {
+      padding: 100px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      min-height: 80vh;
+      background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('https://api.builder.io/api/v1/image/assets/TEMP/dd3db7f4df3a24814cb1e712ad58474ebac6e0f9') center/cover;
+      border-radius: 0 0 50px 50px;
+    }
+    .hero-content h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 56px;
+      line-height: 1.1;
+      margin-bottom: 24px;
+      color: var(--text-main);
+    }
+    .hero-content h1 span {
+      color: var(--green-primary);
+    }
+    .hero-content p {
+      font-size: 18px;
+      color: var(--text-muted);
+      margin-bottom: 32px;
+      line-height: 1.8;
+    }
+    .hero-image img {
+      width: 100%;
+      border-radius: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+      max-width: 1000px;
+      margin: -50px auto 80px;
+      position: relative;
+      z-index: 2;
+    }
+    .stat-item {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .stat-item h3 { color: var(--green-primary); font-size: 32px; margin-bottom: 8px; }
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; text-align: center; padding: 60px 20px; }
+      .hero-content h1 { font-size: 40px; }
+      .stats { grid-template-columns: 1fr 1fr; margin: 20px; }
+    }
+  </style>
 </head>
-<body class="signup-page">
+<body>
 
-  <div id="header-component"></div>
+  <div id="header-component" data-active="home"></div>
 
-  <main class="main-card">
-    <!-- Left: Campus Photo -->
-    <div class="campus-photo-col">
-      <img class="campus-photo" src="https://api.builder.io/api/v1/image/assets/TEMP/b454eca5272b45bd5163bb9547a7f4d29c2b4581?width=1758" alt="PLP Campus">
-      <div class="campus-photo-tint"></div>
-    </div>
-
-    <!-- Right: Form Area -->
-    <div class="form-col">
-      <div class="brand-header">
-        <h1 class="brand-title">
-          <span class="title-green">PLP </span><span class="title-yellow">ELECTRONIC LEARNING </span><span class="title-green">SYSTEM</span>
-        </h1>
-      </div>
-
-      <p class="signup-subtitle">Empower your students with the best learning tools</p>
-
-      <div class="form-and-roles">
-        <form class="register-form">
-          <div class="field-group">
-            <label class="field-label">Full Name</label>
-            <input class="field-input" type="text" placeholder="Last Name, First Name, M.I." required>
-          </div>
-          <div class="field-group">
-            <label class="field-label">Email Address</label>
-            <input class="field-input" type="email" placeholder="name@plpasig.edu.ph" required>
-          </div>
-          <div class="field-group">
-            <label class="field-label">Password</label>
-            <input class="field-input" type="password" placeholder="Create a password" required>
-          </div>
-          <button class="register-btn" type="submit" style="background: var(--green-dark);">Register as Educator</button>
-        </form>
-
-        <div class="role-selector">
-          <a href="signup-student.html" class="role-card">
-            <div class="role-icon-box">
-              <img class="role-icon" src="https://api.builder.io/api/v1/image/assets/TEMP/3a18d9ec8937af5b60962a9a37079870fcd5694a?width=294" alt="Student">
-            </div>
-            <span class="role-label">STUDENT</span>
-          </a>
-          <div class="role-card role-card--active">
-            <div class="role-icon-box">
-              <img class="role-icon" src="https://api.builder.io/api/v1/image/assets/TEMP/cc653d77a6b450e213254eae2a90738b95c0cd80?width=248" alt="Professor">
-            </div>
-            <span class="role-label">PROFESSOR</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="signin-prompt">
-        <span>Already have an account?</span>
-        <a href="login-professor.html" class="signin-link">Sign In Now</a>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Your Gateway to <span>Smart Learning</span> at PLP</h1>
+      <p>The Pamantasan ng Lungsod ng Pasig's Electronic Learning Management System provides a seamless digital classroom experience for both students and educators.</p>
+      <div style="display: flex; gap: 20px;">
+        <a href="signup-professor.html" class="btn btn-primary" style="padding: 15px 40px; font-size: 16px;">Get Started</a>
+        <a href="about.html" class="btn btn-outline" style="padding: 15px 40px; font-size: 16px;">Learn More</a>
       </div>
     </div>
-  </main>
+    <div class="hero-image">
+      <img src="https://api.builder.io/api/v1/image/assets/TEMP/b454eca5272b45bd5163bb9547a7f4d29c2b4581" alt="Learning Experience">
+    </div>
+  </header>
+
+  <section class="stats">
+    <div class="stat-item">
+      <h3>15k+</h3>
+      <p>Active Students</p>
+    </div>
+    <div class="stat-item">
+      <h3>500+</h3>
+      <p>Expert Professors</p>
+    </div>
+    <div class="stat-item">
+      <h3>200+</h3>
+      <p>Digital Courses</p>
+    </div>
+    <div class="stat-item">
+      <h3>98%</h3>
+      <p>Success Rate</p>
+    </div>
+  </section>
 
   <div id="footer-component"></div>
 
-  <script src="components.js"></script>
+  <script type="module" src="./components.js"></script>
 </body>
 </html>
