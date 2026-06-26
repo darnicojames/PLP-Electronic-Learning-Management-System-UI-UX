@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard - PLP ELMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dashboard-styles.css">
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <img src="https://api.builder.io/api/v1/image/assets/TEMP/dd3db7f4df3a24814cb1e712ad58474ebac6e0f9" alt="PLP Logo" class="sidebar-logo">
+      <span class="sidebar-brand">PLP ELMS</span>
+    </div>
+    <nav class="nav-menu">
+      <a href="#" class="nav-item">
+        <span>🏠</span> Home
+      </a>
+      <a href="#" class="nav-item active">
+        <span>📊</span> Dashboard
+      </a>
+      <a href="#" class="nav-item">
+        <span>🏫</span> My Classes
+      </a>
+      <a href="#" class="nav-item">
+        <span>📝</span> Gradebook
+      </a>
+      <a href="#" class="nav-item">
+        <span>📂</span> Repository
+      </a>
+      <a href="#" class="nav-item">
+        <span>⚙️</span> Settings
+      </a>
+    </nav>
+    <div style="padding: 20px; border-top: 1px solid #f0f0f0;">
+      <a href="/login-professor.html" class="nav-item" style="color: #e53935;">
+        <span>🚪</span> Logout
+      </a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-wrapper">
+    <header class="top-header">
+      <div class="search-bar">
+        <span>🔍</span>
+        <input type="text" placeholder="Search for students, classes, or files...">
+      </div>
+      <div class="header-actions">
+        <button style="padding: 8px 16px; background: var(--green-primary); color: white; border: none; border-radius: 20px; font-weight: 600; font-size: 13px; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+          <span>➕</span> Create Class
+        </button>
+        <div class="icon-btn">🔔</div>
+        <div class="user-profile">
+          <div class="user-avatar" style="background-color: var(--green-accent);">AS</div>
+          <div class="user-info">
+            <div style="font-weight: 600; font-size: 14px;">Prof. Alice Smith</div>
+            <div style="font-size: 12px; color: var(--text-muted);">Educator</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="content-body">
+      <section class="welcome-banner" style="background: linear-gradient(135deg, #1b5e20, #003300);">
+        <h2>Good Morning, Prof. Alice! ☕</h2>
+        <p>You have 2 classes today and 45 assignments pending review.</p>
+      </section>
+
+      <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 30px;">
+        <!-- Left Side: Active Classes -->
+        <section>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h3 style="font-size: 20px; font-weight: 700;">My Classes</h3>
+            <a href="#" style="color: var(--green-primary); font-size: 14px; font-weight: 600; text-decoration: none;">Manage All</a>
+          </div>
+          
+          <div class="course-grid">
+            <div class="course-card">
+              <div class="course-thumb" style="background: #e8f5e9 url('https://api.builder.io/api/v1/image/assets/TEMP/b454eca5272b45bd5163bb9547a7f4d29c2b4581') center/cover;"></div>
+              <div class="course-info">
+                <span class="course-tag">SECTION A</span>
+                <h4 class="course-title">Web Development Fundamentals</h4>
+                <div class="course-meta">
+                  <span>👥 45 Students</span>
+                  <span>📅 Mon, Wed 10:00 AM</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div class="course-thumb" style="background: #bbdefb;"></div>
+              <div class="course-info">
+                <span class="course-tag">SECTION C</span>
+                <h4 class="course-title">UI/UX Design Principles</h4>
+                <div class="course-meta">
+                  <span>👥 38 Students</span>
+                  <span>📅 Tue, Thu 02:00 PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Right Side: Recent Submissions -->
+        <section>
+          <h3 style="font-size: 20px; font-weight: 700; margin-bottom: 20px;">Recent Submissions</h3>
+          <div style="background: white; border-radius: 16px; padding: 20px; box-shadow: var(--shadow);">
+            <div style="display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid #f0f0f0;">
+              <div class="user-avatar" style="width: 32px; height: 32px; font-size: 12px; margin-right: 12px;">JD</div>
+              <div style="flex: 1;">
+                <div style="font-weight: 600; font-size: 14px;">John Doe</div>
+                <div style="font-size: 12px; color: var(--text-muted);">Final Project Proposal</div>
+              </div>
+              <span style="font-size: 11px; color: var(--text-muted);">2m ago</span>
+            </div>
+            <div style="display: flex; align-items: center; padding: 12px 0; border-bottom: 1px solid #f0f0f0;">
+              <div class="user-avatar" style="width: 32px; height: 32px; font-size: 12px; margin-right: 12px; background-color: #f57c00;">MS</div>
+              <div style="flex: 1;">
+                <div style="font-weight: 600; font-size: 14px;">Maria Santos</div>
+                <div style="font-size: 12px; color: var(--text-muted);">CSS Layout Quiz</div>
+              </div>
+              <span style="font-size: 11px; color: var(--text-muted);">15m ago</span>
+            </div>
+            <div style="display: flex; align-items: center; padding: 12px 0;">
+              <div class="user-avatar" style="width: 32px; height: 32px; font-size: 12px; margin-right: 12px; background-color: #7b1fa2;">RC</div>
+              <div style="flex: 1;">
+                <div style="font-weight: 600; font-size: 14px;">Robert Chen</div>
+                <div style="font-size: 12px; color: var(--text-muted);">HTML Structure Lab</div>
+              </div>
+              <span style="font-size: 11px; color: var(--text-muted);">1h ago</span>
+            </div>
+            <button style="width: 100%; padding: 10px; background: #f0f2f1; border: none; border-radius: 8px; font-size: 13px; font-weight: 600; margin-top: 15px; cursor: pointer;">View All Submissions</button>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+</body>
+</html>

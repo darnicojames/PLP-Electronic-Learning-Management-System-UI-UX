@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subjects - PLP ELMS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,800;1,700;1,800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --green-primary: #2CA24F;
+      --green-dark: #1b5e20;
+      --text-main: #333333;
+      --bg-light: #f4f7f6;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+      color: var(--text-main);
+      background-color: var(--bg-light);
+    }
+
+    /* Navbar - Shared */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 80px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo-img {
+      width: 50px;
+      height: 50px;
+    }
+
+    .brand-name {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 800;
+      font-style: italic;
+      font-size: 22px;
+      color: var(--green-primary);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 15px;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover, .nav-links a.active {
+      color: var(--green-primary);
+    }
+
+    /* Page Header */
+    .page-header {
+      background: var(--green-primary);
+      color: white;
+      padding: 60px 80px;
+      text-align: center;
+    }
+
+    .page-header h1 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 42px;
+      font-weight: 800;
+      margin-bottom: 15px;
+    }
+
+    /* Subject Content */
+    .container {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .subject-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .subject-card {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      border-left: 5px solid var(--green-primary);
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: all 0.3s;
+    }
+
+    .subject-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+
+    .subject-code {
+      font-weight: 700;
+      color: var(--green-primary);
+      font-size: 14px;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .subject-name {
+      font-size: 20px;
+      font-weight: 800;
+      margin-bottom: 15px;
+      color: var(--green-dark);
+    }
+
+    .subject-info {
+      font-size: 13px;
+      color: #777;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Footer - Shared */
+    footer {
+      background: #1a1a1a;
+      color: white;
+      padding: 60px 80px;
+      margin-top: 60px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    .footer-col h4 {
+      margin-bottom: 20px;
+      font-size: 18px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin-bottom: 10px;
+    }
+
+    .footer-col ul li a {
+      color: #ccc;
+      text-decoration: none;
+      font-size: 14px;
+    }
+
+    .footer-bottom {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid #333;
+      text-align: center;
+      font-size: 13px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="https://api.builder.io/api/v1/image/assets/TEMP/dd3db7f4df3a24814cb1e712ad58474ebac6e0f9" alt="PLP Logo" class="logo-img">
+      <span class="brand-name">PLP ELMS</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="home.html">Home</a></li>
+      <li><a href="program.html">Program</a></li>
+      <li><a href="subject.html" class="active">Subject</a></li>
+      <li><a href="research.html">Research</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <div class="auth-buttons">
+      <a href="login-student.html" style="padding: 10px 24px; border-radius: 25px; font-weight: 700; text-decoration: none; font-size: 14px; border: 2px solid var(--green-primary); color: var(--green-primary);">Login</a>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <h1>Course Subjects</h1>
+    <p>Browse through our comprehensive list of subjects offered across various departments.</p>
+  </header>
+
+  <div class="container">
+    <div class="subject-list">
+      <div class="subject-card">
+        <span class="subject-code">CS 101</span>
+        <h3 class="subject-name">Computer Programming 1</h3>
+        <div class="subject-info">
+          <span>Units: 3.0</span>
+          <span>Semester: 1st</span>
+        </div>
+      </div>
+      <div class="subject-card">
+        <span class="subject-code">CS 202</span>
+        <h3 class="subject-name">Data Structures & Algorithms</h3>
+        <div class="subject-info">
+          <span>Units: 3.0</span>
+          <span>Semester: 2nd</span>
+        </div>
+      </div>
+      <div class="subject-card">
+        <span class="subject-code">MATH 105</span>
+        <h3 class="subject-name">Differential Calculus</h3>
+        <div class="subject-info">
+          <span>Units: 3.0</span>
+          <span>Semester: 1st</span>
+        </div>
+      </div>
+      <div class="subject-card">
+        <span class="subject-code">ENG 101</span>
+        <h3 class="subject-name">Purposive Communication</h3>
+        <div class="subject-info">
+          <span>Units: 3.0</span>
+          <span>Semester: 1st</span>
+        </div>
+      </div>
+      <div class="subject-card">
+        <span class="subject-code">HIST 101</span>
+        <h3 class="subject-name">Readings in Phil. History</h3>
+        <div class="subject-info">
+          <span>Units: 3.0</span>
+          <span>Semester: 1st</span>
+        </div>
+      </div>
+      <div class="subject-card">
+        <span class="subject-code">PE 101</span>
+        <h3 class="subject-name">Physical Fitness</h3>
+        <div class="subject-info">
+          <span>Units: 2.0</span>
+          <span>Semester: 1st</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="logo-container" style="margin-bottom: 20px;">
+          <img src="https://api.builder.io/api/v1/image/assets/TEMP/dd3db7f4df3a24814cb1e712ad58474ebac6e0f9" alt="PLP Logo" class="logo-img" style="filter: brightness(0) invert(1);">
+          <span class="brand-name" style="color: white;">PLP ELMS</span>
+        </div>
+        <p style="color: #888; font-size: 14px;">Dedicated to providing quality digital education to the citizens of Pasig City. Empowering the youth through technology and innovation.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="program.html">Academic Programs</a></li>
+          <li><a href="research.html">Research Center</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">Technical Support</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p style="color: #888; font-size: 14px; margin-bottom: 10px;">📍 Alcalde Jose St, Kapasigan, Pasig, Metro Manila</p>
+        <p style="color: #888; font-size: 14px; margin-bottom: 10px;">📧 info@plpasig.edu.ph</p>
+        <p style="color: #888; font-size: 14px;">📞 (02) 8643 9431</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Pamantasan ng Lungsod ng Pasig. All rights reserved.
+    </div>
+  </footer>
+
+</body>
+</html>

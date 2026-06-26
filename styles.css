@@ -244,6 +244,18 @@ body.signup-page {
   transform: scale(1.04);
 }
 
+.role-card--active .role-icon-box {
+  border-color: #fff;
+  box-shadow: 0 0 15px rgba(44, 162, 79, 0.4);
+  transform: scale(1.08);
+  background: var(--green-bright);
+}
+
+.role-card--active .role-label {
+  color: var(--green-bright);
+  font-weight: 800;
+}
+
 .role-icon {
   width: 100%;
   height: 100%;
@@ -564,11 +576,12 @@ body.login-page {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: opacity 0.2s;
+  transition: all 0.2s ease;
 }
 
 .signin-btn:hover {
-  opacity: 0.88;
+  filter: brightness(1.1);
+  transform: translateY(-1px);
 }
 
 /* Signup prompt (login footer) */
